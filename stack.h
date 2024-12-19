@@ -20,7 +20,7 @@ int getsize()
 {
     return size;
 }
-void insert(T val)
+void push(T val)
 {
 snode<T>* temp=new snode<T>;
 temp->val=val;
@@ -37,15 +37,17 @@ else
     size++;
 }
 }
-void remove()
+T pop()
 {
     snode<T>* p=top;
     if(top!=NULL)
     top=top->next;
+    T val= p->val;
 
     if(p!=NULL)
     delete p;
     size--;
+    return val;
 }
 void display()
 {
