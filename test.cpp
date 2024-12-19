@@ -11,9 +11,9 @@ stack<int> s;
 int main()
 {
 for(int i=0;i<10;i++)
-s.insert(i);
+s.push(i);
 for(int i=0;i<10;i++)
-s.remove();
+s.pop();
 s.display();
 
 for(int i=0;i<10;i++)
